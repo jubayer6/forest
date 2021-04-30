@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Rancho&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url('1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+}
+
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+}
+
+.logo h2{
+    color: #fff;
+    font-size: 3.3rem;
+    font-family: 'Indie Flower', cursive;
+    text-transform: uppercase;
+}
+
+.nav{
+    text-align: center;
+}
+
+.nav a{
+    font-size: 2rem;
+    padding: .8rem 2rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 2.5rem;
+    font-family: 'Poppins';
+    transition: .3s;
+    margin-left: 0.3rem;
+}
+
+.nav a.active{
+    background: #fff;
+    color: #3f7bb3;
+}
+
+.nav a:hover{
+    background: #fff;
+    color: #3f7bb3;
+}
+
+.body{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    width: 100%;
+}
+
+.body h3{
+    color: #fff;
+}
+
+.body h3 .span1{
+    font-size: 1.7rem;
+    font-weight: 200;
+    letter-spacing: .2rem;
+    font-family: 'Poppins';
+    line-height: 1rem;
+    margin-bottom: 1rem;
+}
+
+.body h3 .span2{
+    font-size: 2.2rem;
+    font-weight: 300;
+    letter-spacing: .3rem;
+    font-family: 'Poppins';
+    line-height: 3rem;
+    margin-bottom: 1rem;
+    text-transform: lowercase;
+}
+
+.body h3 .span3{
+    font-size: 15rem;
+    letter-spacing: .9rem;
+    font-family: 'Rancho', cursive;
+    line-height: 13rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: .2rem;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons button{
+    padding: 1rem 2.5rem;
+    border-radius: 2.5rem;
+    font-size: 2rem;
+    border: .2rem solid #fff;
+    color: #fff;
+    margin-right: 1.5rem;
+    text-transform: capitalize;
+    background: transparent;
+    box-shadow: 0px 0px 30px 0px rgba(255,255,255,0.68);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.buttons button:first-child{
+    background: #fff;
+    color: #3f7bb3;
+}
+
+.buttons button:first-child:hover{
+    background: transparent;
+    color: #fff;
+}
+
+.buttons button:last-child{
+    animation: bigger 1s linear infinite;
+    transition: .3s;
+    animation-direction: alternate;
+}
+
+@keyframes bigger{
+    from{transform: scale(1);}
+    to{transform: scale(1.1);}
+}
+
+.buttons button:last-child:hover{
+    background: #fff;
+    color: #3f7bb3;
+}
+
+.social{
+    position: absolute;
+    top: 35%;
+    left: 0;
+}
+
+.social ul{
+    list-style: none;
+}
+
+.social ul li{
+    font-size: 2rem;
+    color: #fff;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background: transparent;
+    border: .1rem solid #fff;
+    line-height: 5rem;
+    text-align: center;
+    margin-top: 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: .3s;
+    box-shadow: 0px 0px 12px 0px rgba(255,255,255,0.72);
+}
+
+.social ul li:hover{
+    color: #3f7bb3;
+    background: #fff;
+}
+
+.mobial_nav{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    background: #3f7bb3f5;
+    height: 100vh;
+    z-index: 1;
+}
+
+.mobial_bar{
+    display: none;
+    font-size: 3rem;
+    color: #fff;
+    margin-right: 3rem;
+    margin-top: 1rem;
+}
+
+.mobial_cross{
+    display: none;
+    font-size: 3rem;
+    color: #fff;
+    margin-right: 3rem;
+    margin-top: 1rem;
+    float: right;
+}
+
+.burger{
+    width: 100%;
+    margin-top: 10rem;
+}
+
+.burger a{
+    display: block;
+    font-size: 2.3rem;
+    padding: .8rem 2rem;
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.burger a.active{
+    background: #fff;
+    color: #3f7bb3;
+    border-radius: 2.5rem;
+}
+
+@media only screen and (max-width: 1024px){
+    .header{
+        padding: 1rem 0 0 7rem;
+    }
+}
+
+@media only screen and (max-width: 968px){
+    .header{
+        padding: 1rem 0 0 10rem;
+    }
+    
+    .mobial_bar,
+    .mobial_cross{
+        display: block;
+    }
+
+    .nav{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 668px){
+    .body h3 .span3{
+        font-size: 10rem;
+    }
+}
+
+@media only screen and (max-width: 520px){
+    .body h3 .span3{
+        font-size: 7rem;
+        line-height: 7rem;
+    }
+
+    .social ul li{
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+        font-size: 1.8rem;
+    }
+
+    .buttons button{
+        padding: .8rem 2rem;
+        font-size: 1.7rem;
+    }
+
+    .mobial_nav{
+        width: 60%;
+    }
+
+}

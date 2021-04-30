@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font awesome  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Forest</title>
+</head>
+<body>
+
+    <section>
+        <header class="header">
+            <div class="logo">
+                <h2>hill tracts</h2>
+            </div>
+            <div class="nav">
+                <a class="active" href="#">Home</a>
+                <a href="#">photo</a>
+                <a href="#">video</a>
+                <a href="#">campaign</a>
+                <a href="#">contact</a>
+            </div>
+            <span class="mobial_bar"><i class="fa fa-bars"></i></span>
+            <div class="mobial_nav">
+                <span class="mobial_cross"><i class="fa fa-times"></i></span>
+                <div class="burger">
+                    <a class="active" href="#">Home</a>
+                    <a href="#">photo</a>
+                    <a href="#">video</a>
+                    <a href="#">campaign</a>
+                    <a href="#">contact</a>
+                </div>
+            </div>
+        </header>
+        <div class="body">
+            <h3>
+                <span class="span1">"nature lover"</span> <br>
+                <span class="span2">let's get ready for a new</span> <br>
+                <span class="span3">advanture</span>
+                <br>
+            </h3>
+        </div>
+            <div class="buttons">
+                <button class type="button">Explore</button>
+                <button class type="button">join now !</button>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><i class="fa fa-facebook"></i></li>
+                    <li><i class="fa fa-instagram"></i></li>
+                    <li><i class="fa fa-twitter"></i></li>
+                    <li><i class="fa fa-youtube-play"></i></li>
+                </ul>
+            </div>
+    </section>
+
+
+    <script>
+
+        var x = document.querySelector(".mobial_bar")
+        var y = document.querySelector(".mobial_nav")
+        var z = document.querySelector(".mobial_cross")
+
+        x.addEventListener("click", function(){
+            y.style.display = "block";
+        })
+
+        z.addEventListener("click", function(){
+            y.style.display = "none";
+        })
+
+
+    </script>
+
+</body>
+</html>
